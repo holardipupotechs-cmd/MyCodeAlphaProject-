@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Quote Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- ============================================================
+       CSS
+  ============================================================ -->
+ 
+</head>
+<body>
+
+  <!-- ============================================================
+       HTML
+  ============================================================ -->
+  <div class="app">
+
+    <header class="app-header">
+      <h1>Quote of the Moment</h1>
+      <p>A little wisdom, whenever you need it.</p>
+    </header>
+
+    <!-- Category filter -->
+    <div class="categories" id="categories"></div>
+
+    <!-- Quote card -->
+    <div class="quote-card" id="quoteCard">
+      <div class="big-quote">"</div>
+      <span class="card-tag" id="cardTag">wisdom</span>
+      <p class="quote-text" id="quoteText"></p>
+      <div class="quote-author">— <span id="quoteAuthor"></span></div>
+    </div>
+
+    <p class="counter" id="counter"></p>
+
+    <!-- Buttons -->
+    <div class="actions">
+      <button class="btn-copy" id="copyBtn" onclick="copyQuote()">Copy</button>
+      <button class="btn-new" onclick="nextQuote()">New Quote</button>
+    </div>
+
+  </div>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+ 
+  <script src="script.js"></script>
+</body>
+</html>
